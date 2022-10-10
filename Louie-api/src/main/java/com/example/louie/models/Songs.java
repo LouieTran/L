@@ -47,8 +47,6 @@ public class Songs implements Serializable {
     private Set<SongsByCategory> songsByCategories;
 
     @ManyToOne
-//    @JsonProperty("id_user")
-//    @JoinColumn(name="id_user", nullable=false)
     @JoinColumn(name="id_user",insertable = false,updatable = false, nullable = false)
     private User user;
 }
